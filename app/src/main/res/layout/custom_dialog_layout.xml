@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/customEditText"
+        android:layout_weight="5"
+        android:hint="Update Word" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:layout_weight="5">
+
+        <Button
+            android:text="ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/customOkButton"
+            android:layout_weight="1"
+            tools:text="ok" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/customCancelButton"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

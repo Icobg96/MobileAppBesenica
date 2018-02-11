@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.score_fragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scoreListView"
+        android:layout_weight="9" />
+
+    <Button
+        android:text="Cliar All Score Records"
+        android:layout_height="0dp"
+        android:id="@+id/scoreCliarbtn"
+        android:layout_width="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

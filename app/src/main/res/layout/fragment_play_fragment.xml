@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.play_fragment"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:weightSum="10">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/playWordTextView"
+        android:layout_weight="2"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:layout_weight="6"
+        android:id="@+id/drowLayout">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/playEditText"
+            android:hint="Enter word or Char"
+            android:elevation="0dp" />
+
+        <Button
+            android:text="supposition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playOkBtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <TextView
+            android:text="Time:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_weight="2.5"
+            android:textIsSelectable="false"
+            android:textSize="24sp" />
+
+        <Chronometer
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playChronometer"
+            android:layout_weight="3"
+            android:textSize="24sp" />
+
+        <Button
+            android:text="Reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playResetBtn"
+            android:layout_weight="4.5" />
+    </LinearLayout>
+
+</LinearLayout>
